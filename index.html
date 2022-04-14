@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sp.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- header==================================================== -->
+  <header>
+    <!-- 【ハンバーガーメニュー】＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
+    <div id="header-top" class="flex">
+      <!-- サイトタイトル -->
+      <h1 id="sitetitle" class="inview fadein">
+        <a href="">
+          Photo Exhibition
+        </a>
+      </h1>
+      <!-- メニューボタン -->
+      <div id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- グローバルメニュー -->
+    <nav id="global-menu">
+      <ul>
+        <li><a href="">TOP</a></li>
+        <li><a href="">INFORMATION</a></li>
+        <li><a href="">GALLERY</a></li>
+        <li><a href="">ACCESS</a></li>
+        <li><a href="">CONTACT</a></li>
+      </ul>
+    </nav>
+    <!-- サイドボタン -->
+    <div id="side-btn" class="flex">
+      <li><a href="">FOR EXHIBITOR</a></li>
+      <li><a href="">FOR VISITOR</a></li>
+    </div>
+    <!-- マスク -->
+    <div id="mask"></div>
+  </header>
+  <!-- main====================================================== -->
+  <main>
+    <!-- キー画像3枚 -->
+    <div id="keyimgs flex">
+      <img class="keyimg" src="images/top1.jpg" alt="">
+      <img class="keyimg" src="images/top2.jpg" alt="">
+      <img class="keyimg" src="images/top3.jpg" alt="">
+    </div>
+    <!-- メインコンテンツ -->
+    <!-- ページタイトル -->
+    <h2 id="pagetitle">
+      Hello Photo!<br>
+      Photo Exhibition 2022
+    </h2>
+    <!-- 「information」 -->
+    <section id="information" class="wrapper inview fadein">
+      <h3 class="sec-title">INFORMATION</h3>
+      <p class="sec-text">
+        <span>2021 JUL 1(THU)-3(SAT)</span><br>
+        <span>DAY1 10am-6pm OTHER 10am-5:30pm</span>
+      </p>
+      <p class="sec-text-bold">at PARK SIDE HALL</p>
+      <p class="sec-text">2021年7月1日(木)ー3日(土)<br>
+        Day1 10時〜18時　その他 10時〜17時30分</p>
+    </section>
+    <!-- 「gallery」 -->
+    <section id="gallery" class="wrapper">
+      <h3 class="sec-title inview fadein">GALLERY</h3>
+      <div class="gal-imgs flex">
+        <li class="inview fadein"><img src="images/photo1.jpg" alt=""></li>
+        <li class="inview fadein"><img src="images/photo2.jpg" alt=""></li>
+        <li class="inview fadein"><img src="images/photo3.jpg" alt=""></li>
+        <li class="inview fadein"><img src="images/photo4.jpg" alt=""></li>
+        <li class="inview fadein"><img src="images/photo5.jpg" alt=""></li>
+        <li class="inview fadein"><img src="images/photo6.jpg" alt=""></li>
+        <li class="inview fadein"><img src="images/photo7.jpg" alt=""></li>
+        <li class="inview fadein"><img src="images/photo8.jpg" alt=""></li>
+      </div>
+
+    </section>
+    <!-- 「access」 -->
+    <section id="access" class="wrapper">
+      <div class="access-contents">
+        <h3 class="sec-title">ACCESS</h3>
+        <p class="sec-text-bold">PARK SIDE HALL</p>
+        <p class="sec-text">
+          〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL<br>
+          PARK SIDE HALL, 1-1-1 Jiyugaoka, Meguro-ku, Tokyo
+        </p>
+        <br>
+        <p class="sec-text">
+          Tel: 03-1111-1111 <br>
+          E-mail: info@xxxxxxx.jp
+        </p>
+        <br>
+        <a class="to-map" href="">GOOGLE MAP</a>
+      </div>
+      <!-- 背景画像 -->
+      <div class="bg"></div>
+    </section>
+    <!-- 「contact」 -->
+    <section id="contact" class="wrapper">
+      <h3 class="sec-title">CONTACT</h3>
+      <a class="to-contact" href="">出展に関するお問い合わせ</a>
+      <a class="to-contact" href="">その他のお問い合わせ</a>
+    </section>
+  </main>
+  <!-- footer==================================================== -->
+  <footer>
+    <!-- アドレス -->
+    <div class="footer-top">
+      <p>Photo Exhibition</p>
+      <p>〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL</p>
+      <p>
+        Tel: 03-1111-1111<br>
+        E-mail: info@xxxxxxx.jp
+      </p>
+    </div>
+
+    <div class="footer-bottom flex">
+      <!-- SNS -->
+      <ul class="footer-sns">
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Instagram</a></li>
+      </ul>
+      <!-- コピーライト -->
+      <div id="copyright" class="flex">
+        <p class="left">PRIVACY POLICY</p>
+        <p class="right">&copy; Photo Exhibition</p>
+      </div>
+    </div>
+  </footer>
+  <script src="jquery.min.js"></script>
+  <script src="jquery.inview.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
